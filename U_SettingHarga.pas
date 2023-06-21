@@ -1,0 +1,55 @@
+unit U_SettingHarga;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TF_SettingHarga = class(TForm)
+    Label1: TLabel;
+    ED_HRGJUAL: TEdit;
+    BTN_HARGAJUAL: TButton;
+    procedure BTN_HARGAJUALClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  F_SettingHarga: TF_SettingHarga;
+
+implementation
+
+uses U_DataModule, U_Menu_Utama;
+
+{$R *.dfm}
+
+procedure TF_SettingHarga.BTN_HARGAJUALClick(Sender: TObject);
+Var
+  KODE_STOCKBRG:String;
+begin
+ KODE_STOCKBRG:=DataModule_TokoBB.ZQ_STOCK.FieldByName('kode_stockbrg').AsString;
+
+ With DataModule_TokoBB.ZQ_Command_SQL Do
+    Begin
+      SQL.Clear;
+      SQL.Add('SELECT * FROM tbl_stockbrg WHERE kode_stockbrg="'+KODE_STOCKBRG+'"');
+      Active:=True;
+
+      Edit;
+      FieldByName('harga_brg').AsString:=ED_HRGJUAL.Text;
+      Post;
+
+      MessageDlg('Harga Berhasil Diubah !',mtInformation,[mbOK],0);
+      F_MenuUtama.LB_HRGJUAL.Caption:=ED_HRGJUAL.Text;
+
+      DataModule_TokoBB.ZQ_Stock.Refresh;
+      F_SettingHarga.Close;
+
+    End;
+end;
+
+end.

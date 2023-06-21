@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.12.6" DotMatrixReport="True" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44744.9592301736" ReportOptions.Description.Text="" ReportOptions.LastChange="44745.0928791088" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403300203546F70024808446174617365747301010C3200000020446174615365743D2252505444425F535452554B2220446174615365744E616D653D225250545F535452554B4A55414C220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxDMPPage Name="Page1" PaperWidth="210.819863845505" PaperHeight="296.862308276426" PaperSize="9" LeftMargin="2.53999835958439" RightMargin="2.53999835958439" TopMargin="4.49791376176403" BottomMargin="4.49791376176403" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" FontStyle="0">
+    <TfrxReportTitle Name="ReportTitle1" Height="68" Left="0" Top="17" Width="777.6">
+      <TfrxDMPMemoView Name="DMPMemo1" Left="230.4" Top="0" Width="336" Height="51" ShowHint="False" FontStyle="0" HAlign="haCenter" ParentFont="False" TruncOutboundText="False" Text="STRUK PENJUALAN BARANG&#13;&#10;CV. WAROENG DELPHI 7&#13;&#10;Mahasiswa Universitas Bina Bangsa"/>
+    </TfrxReportTitle>
+    <TfrxHeader Name="Header1" Height="51" Left="0" Top="119" Width="777.6">
+      <TfrxDMPLineView Name="DMPLine1" Left="-4.8" Top="8.5" Width="777.6" Height="0" ShowHint="False"/>
+      <TfrxDMPLineView Name="DMPLine2" Left="-4.8" Top="42.5" Width="777.6" Height="0" ShowHint="False"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALtgl_jual" Left="0" Top="17" Width="76.8" Height="17" ShowHint="False" DataField="tgl_jual" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;tgl_jual&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALfak_jual" Left="604.8" Top="17" Width="163.2" Height="17" ShowHint="False" DataField="fak_jual" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;fak_jual&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALnm_cust" Left="278.4" Top="17" Width="163.2" Height="17" ShowHint="False" DataField="nm_cust" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;nm_cust&#34;]"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" Height="34" Left="0" Top="187" Width="777.6" ColumnWidth="0" ColumnGap="0" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" RowCount="0">
+      <TfrxDMPMemoView Name="RPT_STRUKJUALnm_merk_barang" Align="baLeft" Left="0" Top="0" Width="182.4" Height="17" ShowHint="False" DataField="nm_merk_barang" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;nm_merk_barang&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALqty" Align="baLeft" Left="182.4" Top="0" Width="67.2" Height="17" ShowHint="False" DataField="qty" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;qty&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALvarian" Align="baLeft" Left="249.6" Top="0" Width="153.6" Height="17" ShowHint="False" DataField="varian" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;varian&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALjumlah" Left="393.6" Top="0" Width="86.4" Height="17" ShowHint="False" DataField="jumlah" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;jumlah&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALtotal_harga" Align="baRight" Left="681.6" Top="0" Width="96" Height="17" ShowHint="False" DataField="total_harga" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;total_harga&#34;]"/>
+      <TfrxDMPMemoView Name="RPT_STRUKJUALharga_brg" Left="556.8" Top="0" Width="76.8" Height="17" ShowHint="False" DataField="harga_brg" DataSet="RPTDB_STRUK" DataSetName="RPT_STRUKJUAL" HAlign="haCenter" TruncOutboundText="False" Text="[RPT_STRUKJUAL.&#34;harga_brg&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo2" Left="480" Top="0" Width="19.2" Height="17" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="x"/>
+      <TfrxDMPMemoView Name="DMPMemo3" Left="537.6" Top="0" Width="28.8" Height="17" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="Rp."/>
+      <TfrxDMPMemoView Name="DMPMemo4" Left="662.4" Top="0" Width="28.8" Height="17" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="Rp."/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" Height="153" Left="0" Top="238" Width="777.6">
+      <TfrxDMPLineView Name="DMPLine3" Left="648" Top="8.5" Width="124.8" Height="0" ShowHint="False"/>
+      <TfrxDMPMemoView Name="DMPMemo5" Left="576" Top="17" Width="76.8" Height="17" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="Total :"/>
+      <TfrxDMPMemoView Name="DMPMemo6" Left="652.8" Top="17" Width="28.8" Height="17" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="Rp."/>
+      <TfrxDMPLineView Name="DMPLine4" Left="-4.8" Top="144.5" Width="777.6" Height="0" ShowHint="False"/>
+      <TfrxDMPMemoView Name="DMPMemo7" Left="393.6" Top="85" Width="422.4" Height="68" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="-- Terima Kasih --&#13;&#10;Atas Kunjungan Anda Ke Waroeng Kami&#13;&#10;-- Jangan Lupa Belanja Lagi Ya. --"/>
+      <TfrxDMPMemoView Name="DMPMemo8" Left="-96" Top="17" Width="422.4" Height="68" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="Kasir&#13;&#10;CV. Waroeng Delphi 7.0"/>
+      <TfrxDMPMemoView Name="DMPMemo9" Left="-48" Top="119" Width="316.8" Height="34" ShowHint="False" HAlign="haCenter" TruncOutboundText="False" Text="( Nasrullah )"/>
+      <TfrxDMPMemoView Name="DMPMemo10" Left="681.6" Top="17" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haCenter" TruncOutboundText="False" Text="[SUM(StrToFloat(&#60;RPT_STRUKJUAL.&#34;total_harga&#34;&#62;),MasterData1)]"/>
+    </TfrxFooter>
+  </TfrxDMPPage>
+</TfrxReport>
